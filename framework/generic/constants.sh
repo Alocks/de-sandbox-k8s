@@ -31,4 +31,6 @@ readonly NATO_CODES=(
     "zulu"
 )
 readonly MAX_NUM_OF_VMS=${#NATO_CODES[@]}
-readonly MULTIPASS_TOKEN=$MULTIPASS_TOKEN
+
+# Import variables from .env if variable is not set in the system
+[[ -z "$MULTIPASS_PASSPHRASE" ]] && source .env

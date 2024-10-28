@@ -10,5 +10,5 @@ vm_args_parser "$@"
 
 # Execute commands to set virtual machine(s) and global variables in the host
 for (( i=0; i < $VM_QTY; i++ )); do
-  vm_set_virtual_machine $i
+  vm_set_virtual_machine
 done
